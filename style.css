@@ -14,10 +14,7 @@ ul {
   overflow: visible;
 }
 
-li {
-  float: left;
 
-}
 
 li a {
   display: block;
@@ -29,7 +26,8 @@ color:white;
 .dropdown {
   position: relative;
   display: inline-block;
-
+padding-left:13px;
+padding-right:13px;
 }
 
 .dropdown-content {
