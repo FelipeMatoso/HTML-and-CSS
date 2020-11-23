@@ -190,11 +190,25 @@ li.dropdown {
     }
 }
 
-.coluna{
+.thead {
+    text-align: center;
+}
+
+.coluna {
+    float: left;
+    width: 60%;
+    text-align: center;
+
+}
+
+.linha {
     color: rgb(201, 40, 40);
-    width: 40%;
-    text-align: left;
-    border: 2px;
-    padding: 4cm;
-    margin: auto;
+    padding: 4cm 222cm 4cm 22cm;
+    margin: 3px 0px 3px 0px;
+    border-style: dotted;
+    border: 3px;
+}
+
+.table-titulo{
+    color: blue;
 }

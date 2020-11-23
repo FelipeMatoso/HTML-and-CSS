@@ -1,6 +1,5 @@
 var click = document.querySelector("#botao");
 
-
 click.addEventListener("click", function () {
 
     var xhr = new XMLHttpRequest();
@@ -13,7 +12,7 @@ click.addEventListener("click", function () {
         var pessoas = JSON.parse(xhr.responseText);
         console.log(pessoas);
 
-        var userIdTr = document.querySelector(".coluna");
+        var userIdTr = document.querySelector(".userId");
         var idTr = document.querySelector(".id");
         var titleTr = document.querySelector(".title");
         var completeTr = document.querySelector(".complete");
@@ -27,41 +26,40 @@ click.addEventListener("click", function () {
 
         pessoas.forEach(p => {
 
-            userIdTr = document.querySelector(".coluna");
-            idTr = document.querySelector(".id");
-            titleTr = document.querySelector(".title");
-            completeTr = document.querySelector(".complete");
-
             userIdTr = p.userId;
             idTr = p.id;
             titleTr = p.title;
             completeTr = p.completed;
 
-            userIdTd.classList.add("userId");
             userIdTd.textContent = p.userId;
-            tr.appendChild(userIdTd,"coluna");
+            userIdTd.classList.add("userId");
+            tr.appendChild(userIdTd,"userId");
 
+            console.log(tr)
 
+            idTd.textContent = p.id;
             idTd.classList.add("id");
-            idtd.textContent = p.id;
             tr.appendChild(idTd,"id");
+            console.log(tr)
 
 
             
+            titleTd.textContent = p.title;
             titleTd.classList.add("title");
-            titletd.textContent = p.title;
             tr.appendChild(titleTd,"title");
 
+            console.log(tr)
 
             
-            completeTd.classList.add("complete");
             completeTd.textContent = p.completed;
+            completeTd.classList.add("complete");
             tr.appendChild(completeTd,"complete");
+            console.log(tr)
 
 
-            document.querySelector(".lista").appendChild(tr)
-            
-
+            document.querySelector(".linha").appendChild(tr)
+            console.log("passou ");
+            console.log(tr)
 
         });
     })
