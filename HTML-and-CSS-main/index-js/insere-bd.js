@@ -59,7 +59,7 @@ click.addEventListener("click", function () {
                 tr.classList.add("linha");
                 document.querySelector(".tabela").appendChild(tr);
                 console.log("feito");
-            //}
+            //} responsavel pelo if la de filtro
 
         });
     })
