@@ -22,9 +22,10 @@ click.addEventListener("click", function () {
         var titleTd = document.createElement("td");
         var completeTd = document.createElement("td");
 
-        var tr = document.createElement("tr")
 
         pessoas.forEach(p => {
+
+            var tr = document.createElement("tr");
 
             userIdTr = p.userId;
             idTr = p.id;
@@ -33,27 +34,27 @@ click.addEventListener("click", function () {
 
             userIdTd.textContent = p.userId;
             userIdTd.classList.add("userId");
-            tr.appendChild(userIdTd,"userId");
+            tr.appendChild(userIdTd, "userId");
 
             console.log(tr)
 
             idTd.textContent = p.id;
             idTd.classList.add("id");
-            tr.appendChild(idTd,"id");
+            tr.appendChild(idTd, "id");
             console.log(tr)
 
 
-            
+
             titleTd.textContent = p.title;
             titleTd.classList.add("title");
-            tr.appendChild(titleTd,"title");
+            tr.appendChild(titleTd, "title");
 
             console.log(tr)
 
-            
+
             completeTd.textContent = p.completed;
             completeTd.classList.add("complete");
-            tr.appendChild(completeTd,"complete");
+            tr.appendChild(completeTd, "complete");
             console.log(tr)
 
 
