@@ -194,16 +194,15 @@ li.dropdown {
     text-align: center;
 }
 
-.coluna {
-    float: left;
-    width: 60%;
+.tabela {
+    position: relative;
+    width: 80%;
     text-align: center;
-
+    font-size: 30px;
 }
 
 .linha {
     color: rgb(201, 40, 40);
-    padding: 4cm 222cm 4cm 22cm;
     margin: 3px 0px 3px 0px;
     border-style: dotted;
     border: 3px;

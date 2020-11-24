@@ -12,7 +12,13 @@ click.addEventListener("click", function () {
         var pessoas = JSON.parse(xhr.responseText);
         console.log(pessoas);
 
-        var userIdTr = document.querySelector(".userId");
+ 
+
+        var tr = document.createElement("table");
+
+        pessoas.forEach(p => {
+            
+       var userIdTr = document.querySelector(".userId");
         var idTr = document.querySelector(".id");
         var titleTr = document.querySelector(".title");
         var completeTr = document.querySelector(".complete");
@@ -22,10 +28,7 @@ click.addEventListener("click", function () {
         var titleTd = document.createElement("td");
         var completeTd = document.createElement("td");
 
-
-        pessoas.forEach(p => {
-
-            var tr = document.createElement("tr");
+         tr = document.createElement("tr");
 
             userIdTr = p.userId;
             idTr = p.id;
@@ -36,12 +39,10 @@ click.addEventListener("click", function () {
             userIdTd.classList.add("userId");
             tr.appendChild(userIdTd, "userId");
 
-            console.log(tr)
 
             idTd.textContent = p.id;
             idTd.classList.add("id");
             tr.appendChild(idTd, "id");
-            console.log(tr)
 
 
 
@@ -49,18 +50,15 @@ click.addEventListener("click", function () {
             titleTd.classList.add("title");
             tr.appendChild(titleTd, "title");
 
-            console.log(tr)
 
 
             completeTd.textContent = p.completed;
-            completeTd.classList.add("complete");
+            completeTd.classList.add("completed");
             tr.appendChild(completeTd, "complete");
-            console.log(tr)
 
-
-            document.querySelector(".linha").appendChild(tr)
-            console.log("passou ");
-            console.log(tr)
+            tr.classList.add("tabela");
+            document.querySelector(".tabela").appendChild(tr);
+            console.log(tr);
 
         });
     })
