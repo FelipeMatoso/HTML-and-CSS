@@ -194,20 +194,30 @@ li.dropdown {
     text-align: center;
 }
 
-.tabela {
+.tabela{
     position: relative;
     width: 80%;
     text-align: center;
     font-size: 30px;
+
+}
+
+.userId, .id, .title, .completed{
+    border: blue;   
+    border-style: dashed;
+    padding: 20px;
 }
 
 .linha {
     color: rgb(201, 40, 40);
     margin: 3px 0px 3px 0px;
-    border-style: dotted;
-    border: 3px;
 }
 
 .table-titulo{
     color: blue;
+}
+
+.bot{
+    position: sticky;
+    background-color: chartreuse;
 }
