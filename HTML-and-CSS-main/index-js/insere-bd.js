@@ -16,7 +16,7 @@ click.addEventListener("click", function () {
 
         pessoas.forEach(p => {
 
-
+            //if(p.completed == (true ou false)){
                 var userIdTr = document.querySelector(".userId");
                 var idTr = document.querySelector(".id");
                 var titleTr = document.querySelector(".title");
@@ -59,7 +59,7 @@ click.addEventListener("click", function () {
                 tr.classList.add("linha");
                 document.querySelector(".tabela").appendChild(tr);
                 console.log("feito");
-            }
+            //}
 
         });
     })
